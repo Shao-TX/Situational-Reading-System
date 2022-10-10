@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 from utils.toArduino import Control_Arduino, Reset_Arduino
-from utils.img2aruco import To_Aruco
+from utils.toAruco import To_Aruco
 
 # %%
 device_state = [0, 0, 0, 0]
