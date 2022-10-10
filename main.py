@@ -21,17 +21,23 @@ if __name__ == "__main__":
 
         frame, markerCorners, markerIds, rejectedCandidates= To_Aruco(frame)
 
+        print(timer)
 
         if markerIds != None:
-            device_id = int(markerIds[0][0])
-            print(device_id)
+            if(timer==0):
+                device_id = int(markerIds[0][0])
+                print("Device On : ", device_id)
 
-            device_state = [0]*4 # [0, 0, 0, 0]
-            device_state[device_id] = 1
-           
-        else :
-            print("None")
-            device_state = [0] * 4
+                device_state = [0]*4 # [0, 0, 0, 0]
+                device_state[device_id] = 1
+
+            timer = 150 # 5 Second : Because opencv is 30 fps => 150 = 30*5
+
+        elif(timer>0) :
+            timer -= 1
+            if(timer==0):
+                print("Device Off")
+                device_state = [0] * 4
 
         Control_Arduino(device_state)
 
