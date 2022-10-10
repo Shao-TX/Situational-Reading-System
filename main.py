@@ -8,6 +8,7 @@ from utils.toAruco import To_Aruco
 
 # %%
 device_state = [0, 0, 0, 0]
+last_device_id = None
 timer = 0
 
 # %%
@@ -24,8 +25,10 @@ if __name__ == "__main__":
         print(timer)
 
         if markerIds != None:
-            if(timer==0):
-                device_id = int(markerIds[0][0])
+            device_id = int(markerIds[0][0])
+            if(timer==0 or device_id != last_device_id):
+                print(type(device_id))
+                last_device_id = device_id
                 print("Device On : ", device_id)
 
                 device_state = [0]*4 # [0, 0, 0, 0]
