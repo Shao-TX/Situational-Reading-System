@@ -1,0 +1,73 @@
+{
+  "page1": {
+    "image": "books/book1/images/1.png",
+    "music": "books/book1/musics/Relaxed",
+    "device": [0, 0, 0, 0]
+  },
+
+  "page2": {
+    "image": "books/book1/images/2.png",
+    "music": "books/book1/musics/Happy",
+    "device": [1, 0, 0, 0]
+  },
+
+  "page3": {
+    "image": "books/book1/images/3.png",
+    "music": "books/book1/musics/Relaxed",
+    "device": [0, 1, 0, 0]
+  },
+
+  "page4": {
+    "image": "books/book1/images/4.png",
+    "music": "books/book1/musics/Angry",
+    "device": [1, 0, 0, 1]
+  },
+
+  "page5": {
+    "image": "books/book1/images/5.png",
+    "music": "books/book1/musics/Sad",
+    "device": [0, 0, 0, 0]
+  },
+
+  "page6": {
+    "image": "books/book1/images/6.png",
+    "music": "books/book1/musics/Sad",
+    "device": [1, 0, 1, 0]
+  },
+
+  "page7": {
+    "image": "books/book1/images/7.png",
+    "music": "books/book1/musics/Sad",
+    "device": [1, 0, 1, 0]
+  },
+
+  "page8": {
+    "image": "books/book1/images/8.png",
+    "music": "books/book1/musics/Happy",
+    "device": [0, 0, 0, 0]
+  },
+
+  "page9": {
+    "image": "books/book1/images/9.png",
+    "music": "books/book1/musics/Happy",
+    "device": [1, 0, 1, 0]
+  },
+
+  "page10": {
+    "image": "books/book1/images/10.png",
+    "music": "books/book1/musics/Happy",
+    "device": [0, 0, 0, 0]
+  },
+
+  "page11": {
+    "image": "books/book1/images/11.png",
+    "music": "books/book1/musics/Happy",
+    "device": [0, 1, 0, 0]
+  },
+
+  "page12": {
+    "image": "books/book1/images/12.png",
+    "music": "books/book1/musics/Relaxed",
+    "device": [0, 1, 1, 0]
+  }
+}
