@@ -42,7 +42,11 @@ if __name__ == "__main__":
         # print(timer)
         print(markerIds)
 
-        if markerIds != None:
+        if not isinstance(markerIds, np.ndarray):
+            pass
+        elif len(markerIds) != 1:
+            print("More than one marker detected.")
+        else:
             page_id = int(markerIds[0][0])
             if(timer==0 or page_id != last_page_id):
                 last_page_id = page_id
@@ -67,15 +71,15 @@ if __name__ == "__main__":
 
             timer = 150 # 5 Second : Because opencv is 30 fps => 150 = 30*5
 
-        elif(timer>0) :
-            timer -= 1
-            if(timer==0):
-                print("Device Off")
-                device_state = [0] * 4
+            if(timer>0) :
+                timer -= 1
+                if(timer==0):
+                    print("Device Off")
+                    device_state = [0] * 4
             
-                stop_process(p1, p2)
+                    stop_process(p1, p2)
 
-        Control_Arduino(device_state)
+            Control_Arduino(device_state)
 
         # 顯示圖片
         cv2.aruco.drawDetectedMarkers(frame, markerCorners, markerIds)
