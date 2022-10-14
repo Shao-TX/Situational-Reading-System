@@ -1,0 +1,5 @@
+keyboard==0.13.5
+numpy==1.21.3
+opencv_python_headless==4.5.5.64
+playsound==1.2.2
+pyFirmata2==2.4.2
